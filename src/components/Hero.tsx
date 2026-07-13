@@ -107,13 +107,6 @@ export default function Hero() {
           >
             Explore Collections
           </button>
-          <button
-            onClick={() => { const el = document.getElementById('about'); if(el) el.scrollIntoView({behavior:'smooth'}) }}
-            className="px-10 py-4 border border-white/50 text-white text-sm font-medium tracking-[0.2em] uppercase hover:border-gold hover:text-gold transition-all duration-300"
-            style={{ fontFamily: 'var(--font-sans)' }}
-          >
-            Our Heritage
-          </button>
         </div>
       </div>
 
