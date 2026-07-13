@@ -5,21 +5,21 @@ import { useScrollReveal } from '@/hooks/useScrollReveal'
 const galleryItems = [
   {
     id: 1,
-    image: 'public/Screenshot 2026-07-08 141143.png',
+    image: '/Screenshot 2026-07-08 141143.png',
     title: 'Showroom exterior',
     description: 'Our grand showroom facade, welcoming you with warmth and elegance.',
     span: 'md:col-span-2',
   },
   {
     id: 3,
-    image: 'public/Screenshot 2026-07-10 151557.png',
+    image: '/Screenshot 2026-07-10 151557.png',
     title: 'Kanchipuram Silks',
     description: 'Pure authentic Kanchipuram silks, direct from the weaving capital.',
     span: '',
   },
   {
     id: 4,
-    image: 'public/Screenshot 2026-07-08 141201.png',
+    image: '/Screenshot 2026-07-08 141201.png',
     title: 'Showroom Interior',
     description: 'Helping brides find their dream saree for their most special day.',
     span: '',

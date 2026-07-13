@@ -80,10 +80,10 @@ export default function Navbar() {
               key={link.href}
               onClick={() => handleNavClick(link.href)}
               className={`text-sm font-medium tracking-wide transition-all duration-300 relative group ${scrolled
-                  ? activeSection === link.href.replace('#', '')
-                    ? 'text-maroon'
-                    : 'text-charcoal hover:text-maroon'
-                  : 'text-white/90 hover:text-white'
+                ? activeSection === link.href.replace('#', '')
+                  ? 'text-maroon'
+                  : 'text-charcoal hover:text-maroon'
+                : 'text-white/90 hover:text-white'
                 }`}
               style={{ fontFamily: 'var(--font-sans)' }}
             >
@@ -97,8 +97,8 @@ export default function Navbar() {
           <button
             onClick={() => handleNavClick('#contact')}
             className={`ml-4 px-5 py-2 text-sm font-medium tracking-widest uppercase border transition-all duration-300 hover:scale-105 ${scrolled
-                ? 'border-gold text-gold hover:bg-gold hover:text-white'
-                : 'border-white/70 text-white hover:bg-white hover:text-maroon'
+              ? 'border-gold text-gold hover:bg-gold hover:text-white'
+              : 'border-white/70 text-white hover:bg-white hover:text-maroon'
               }`}
             style={{ fontFamily: 'var(--font-sans)', letterSpacing: '0.1em' }}
           >
@@ -129,8 +129,8 @@ export default function Navbar() {
               key={link.href}
               onClick={() => handleNavClick(link.href)}
               className={`text-left py-3 text-sm font-medium tracking-wide border-b border-gray-100 last:border-0 transition-colors duration-200 ${activeSection === link.href.replace('#', '')
-                  ? 'text-maroon'
-                  : 'text-charcoal hover:text-maroon'
+                ? 'text-maroon'
+                : 'text-charcoal hover:text-maroon'
                 }`}
               style={{ fontFamily: 'var(--font-sans)' }}
             >
