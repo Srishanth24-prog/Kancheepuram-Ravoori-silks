@@ -76,14 +76,6 @@ const collections: Collection[] = [
     description: 'Glamorous silk and georgette sarees adorned with sequins, embroidery, and luxurious embellishments — made to dazzle at every celebration.',
     highlights: ['Sequin & crystal work', 'Embroidered borders', 'Evening luxury', 'Rich textures'],
   },
-  {
-    id: 'festive',
-    name: 'Festive',
-    subtitle: 'Collection',
-    image: '/collection-festive.webp',
-    description: 'Bright, joyful, and vibrant — our festive collection captures the spirit of celebration with rich colors and traditional motifs perfect for every festival.',
-    highlights: ['Festival-ready colors', 'Traditional motifs', 'Gold zari borders', 'Celebratory designs'],
-  },
 ]
 
 interface GalleryModalProps {
@@ -152,7 +144,7 @@ function GalleryModal({ collection, onClose, onPrev, onNext }: GalleryModalProps
             ))}
           </ul>
           <button
-            onClick={() => { onClose(); setTimeout(() => { const el = document.getElementById('contact'); if(el) el.scrollIntoView({behavior:'smooth'}) }, 300) }}
+            onClick={() => { onClose(); setTimeout(() => { const el = document.getElementById('contact'); if (el) el.scrollIntoView({ behavior: 'smooth' }) }, 300) }}
             className="w-full py-3.5 border border-gold text-gold text-sm font-medium tracking-widest uppercase hover:bg-gold hover:text-white transition-all duration-300"
             style={{ fontFamily: 'var(--font-sans)' }}
           >
@@ -234,9 +226,8 @@ export default function Collections() {
           {collections.map((collection, i) => (
             <div
               key={collection.id}
-              className={`group relative cursor-pointer overflow-hidden transition-all duration-700 ${
-                visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              } ${i === 0 ? 'col-span-2 md:col-span-2 row-span-1' : ''}`}
+              className={`group relative cursor-pointer overflow-hidden transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                } ${i === 0 ? 'col-span-2 md:col-span-2 row-span-1' : ''}`}
               style={{ transitionDelay: `${Math.min(i * 80, 600)}ms` }}
               onClick={() => openModal(i)}
             >
@@ -283,7 +274,7 @@ export default function Collections() {
             Can't find what you're looking for? We have thousands more designs in store.
           </p>
           <button
-            onClick={() => { const el = document.getElementById('visit'); if(el) el.scrollIntoView({behavior:'smooth'}) }}
+            onClick={() => { const el = document.getElementById('visit'); if (el) el.scrollIntoView({ behavior: 'smooth' }) }}
             className="px-10 py-3.5 border border-gold text-gold text-sm font-medium tracking-widest uppercase hover:bg-gold hover:text-white transition-all duration-300"
             style={{ fontFamily: 'var(--font-sans)' }}
           >

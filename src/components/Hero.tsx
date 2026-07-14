@@ -113,9 +113,8 @@ export default function Hero() {
       {/* Scroll Down Indicator */}
       <button
         onClick={handleScrollDown}
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-gold transition-all duration-300 ${
-          loaded ? 'opacity-100' : 'opacity-0'
-        }`}
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-gold transition-all duration-300 ${loaded ? 'opacity-100' : 'opacity-0'
+          }`}
         style={{ animationDelay: '1s' }}
       >
         <span className="text-xs tracking-widest uppercase" style={{ fontFamily: 'var(--font-sans)' }}>Scroll</span>
